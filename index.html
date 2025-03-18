@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Guia de Uso Seguro da IA na PGE-SC</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <link rel="stylesheet" href="styles.css">
+      <!-- Add these before your other scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script>
+          (function() {
+              emailjs.init("cole_sua_public_key_aqui");
+          })();
+      </script>
+      <script src="script.js" defer></script>
+  </head>
+<body>
+    <header>
+        <img src="./img/pge.png" alt="Descrição da Imagem" class="header-img">
+        <h1>Guia de Uso Seguro da IA Generativa na PGE-SC</h1>
+        <img src="./img/eppe-logo-color.png" alt="Segunda Imagem" class="header-img-right">
+    </header>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p><strong>Aviso:</strong> A portaria <strong>GAB/PGE n° 19/2025</strong> está disponível. Para acessar <a
+                    href="./materia.pdf" target="_blank" id="pdf-link">Clique aqui</a></p>
+            <div class="popup-actions">
+                <button id="ok-btn">OK</button>
+                <label class="dont-show-again">
+                    <input type="checkbox" id="dontShowAgain">
+                    Não mostrar novamente
+                </label>
+               
+            </div>
+        </div>
+    </div>
+    
+
+    /* Documentos e Orientações */
+    </div>
+    <main>
+        <section class="info-section" id="infoSection">
+            <h2><b>Documentos e Orientações</b></h2>
+            <p>
+                A PGE-SC definiu diretrizes de uso de Inteligencia Artificial, por meio da portaria <strong>GAB/PGE nº
+                    19/2025</strong>.
+                <a href="./materia.pdf" target="_blank">Clique aqui</a>
+            </p>
+            <p>
+                Governo Federal lança cartilha "Inteligência Artificial Generativa no Serviço Público".
+                <a href="https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/inteligencia-artificial-1/ia-generativa-no-servico-publico.pdf"
+                    target="_blank">Clique aqui</a>
+            </p>
+
+        </section>
+        <section class="info-section" id="infoSection">
+            <h2><b>Ferramentas Disponiveis no Momento</h2>
+            <h4> ATENÇÂO: As ferramentas a seguir são seguras somente quando acessadas por meio de login do e-mail
+                institucional da PGE/SC. </h4>
+
+
+            <section class="cards-section">
+                <div class="card" id="cardGemini">
+                    <div class="card-content">
+                        <h2>Gemini <button onclick="window.open('https://gemini.google.com/app', '_blank')"
+                                class="link-indicator">
+                                <img src="./img/gemini-color.png" alt="Gemini Icon" class="button-icon"> <b> Acessar
+                                    Gemini</b>
+                            </button></h2>
+                        <p>O Gemini é uma ferramenta desenvolvida pela Google que utiliza IA para gerar textos de forma
+                            colaborativa. Ela permite que os usuários criem documentos compartilhados e editem o
+                            conteúdo
+                            simultaneamente. O Gemini oferece recursos como sugestões de texto, tradução automática e
+                            formatação inteligente. <br>Os usuários podem interagir com a IA através de comandos de voz
+                            e
+                            atalhos de teclado para agilizar a produção de documentos. O Gemini é útil para redação de
+                            pareceres, contratos, relatórios e outros tipos de textos jurídicos.
+                        </p>
+                       
+                    </div>
+                </div>
+
+                <div class="card" id="cardNotebookLM">
+                    <div class="card-content">
+                        <h2>NotebookLM
+                            <button onclick="window.open('https://notebooklm.google.com/', '_blank')"
+                                class="link-indicator">
+                                <img src="./img/NotebookLM_icon.png" alt="NotebookLM Icon" class="button-icon">
+                                <b>Acesar NotebookLM</b>
+                            </button>
+                        </h2>
+                        <p>O NotebookLM é uma ferramenta de IA projetada para auxiliar na compreensão e síntese de
+                            informações complexas. Ele permite aos usuários fazer upload de documentos e outros
+                            materiais como "fontes" para criar cadernos organizados por assunto. Os usuários podem
+                            interagir com a IA através de um chat para fazer perguntas e obter respostas baseadas nessas
+                            fontes. <br>O NotebookLM oferece recursos para gerar resumos, guias de estudo e outros
+                            formatos de conteúdo. O recurso audio overview cria conversas entre duas IAs, como se fosse
+                            um podcast, com intuito de sintetizar as informações das fontes. O NotebookLM é útil para
+                            diversas tarefas como pesquisa, elaboração de documentação e análise de transcrições.
+                        </p>
+                        
+                    </div>
+                </div>
+                </p>
+                </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="info-section" id="boasPraticasSection">
+            <h2>Boas Práticas <button class="expand-indicator" type="button">Expandir</button></h2>
+
+            <ul class="boas-praticas-list">
+                <li>
+                    <h3>1. Veracidade </h3>
+                    <p>Sempre valide as informações geradas pela IA</p>
+                    <p><strong>Regra (Art. 2º, I):</strong> As informações geradas por IA devem ser precisas e baseadas
+                        em dados confiáveis.</p>
+                    <p><span class="certo">✅ Certo:</span> Revisar e confrontar as informações com fontes oficiais antes
+                        de utilizá-las.</p>
+                    <p><span class="errado">❌ Errado:</span> Copiar e colar as informações geradas sem conferir sua
+                        precisão jurídica.</p>
+                </li>
+                <li>
+                    <h3>2. Responsabilidade </h3>
+                    <p>O usuário é responsável pela validação das informações</p>
+                    <p><strong>Regra (Art. 2º, II):</strong> O usuário deve revisar os conteúdos antes de sua utilização
+                        ou divulgação.</p>
+                    <p><span class="certo">✅ Certo:</span> Utilizar IA para gerar um esboço de documento e submetê-lo a
+                        revisão.</p>
+                    <p><span class="errado">❌ Errado:</span> Publicar um relatório automatizado sem verificação de
+                        coerência.</p>
+                </li>
+                <li>
+                    <h3>3. Proteção de Dados </h3>
+                    <p>Não insira informações pessoais ou sensíveis</p>
+                    <p><strong>Regra (Art. 2º, III):</strong> A inserção de dados pessoais nos sistemas de IA deve ser
+                        evitada, em conformidade com a Lei Geral de Proteção de Dados (LGPD).</p>
+                    <p><span class="certo">✅ Certo:</span> Utilizar IA apenas com dados públicos ou anonimizados.</p>
+                    <p><span class="errado">❌ Errado:</span> Inserir nomes, CPF ou processos sigilosos em ferramentas de
+                        IA.</p>
+                    <p><span class="dica">📌 Dica:</span> Verifique se o ambiente de IA utilizado é protegido e seguro
+                        de modo que os dados não serão compartilhados na rede mundial de computadores.</p>
+                </li>
+                <li>
+                    <h3>4. Compartilhamento de Dados </h3>
+                    <p>Não exponha informações institucionais sensíveis</p>
+                    <p><strong>Regra (Art. 2º, IV):</strong> É vedado inserir dados estratégicos da PGE-SC em sistemas
+                        que possam armazená-los ou compartilhá-los na internet.</p>
+                    <p><span class="certo">✅ Certo:</span> Usar IA apenas para estruturar textos baseados em conteúdos
+                        públicos.</p>
+                    <p><span class="errado">❌ Errado:</span> Submeter um documento interno sigiloso para análise por IA.
+                    </p>
+                </li>
+                <li>
+                    <h3>5. IA como apoio, não decisão </h3>
+                    <p>A IA deve ser utilizada como ferramenta auxiliar, não como fonte única para decisões jurídicas.
+                    </p>
+                    <p><span class="certo">✅ Certo:</span> IA pode sugerir argumentos jurídicos, mas a decisão deve ser
+                        validada pelo procurador responsável.</p>
+                    <p><span class="errado">❌ Errado:</span> Basear decisões jurídicas apenas nas respostas da IA.</p>
+                </li>
+                <li>
+                    <h3>6. Transparência </h3>
+                    <p>Registre o Uso da IA no Trabalho</p>
+                    <p><strong>Regra (Art. 3º, III):</strong> A PGE-SC deve manter registros das aplicações de IA para
+                        garantir rastreabilidade.</p>
+                    <p><span class="certo">✅ Certo:</span> Manter o registro das interações e conteúdos utilizados.</p>
+                    <p><span class="errado">❌ Errado:</span> Utilizar IA para gerar documentos sem qualquer controle ou
+                        registro.</p>
+                </li>
+                <li>
+                    <h3>7. Use Plataformas Seguras </h3>
+
+                    <p>Dê preferência a soluções de IA corporativas ou aprovadas pela equipe de segurança da informação
+                        da empresa.</p>
+                    <p><span class="certo">✅ Certo:</span> Utilizar ferramentas reconhecidas e aprovadas pelo TI.</p>
+                    <p><span class="errado">❌ Errado:</span> Usar IA desconhecida ou que não tenha protocolos de
+                        segurança claros.</p>
+
+                </li>
+                <li>
+                    <h3>8. Ética e Transparência </h3>
+                    <p>Não utilize IA para distorcer informações</p>
+                    <p>O uso da IA deve ser ético e transparente, garantindo que os conteúdos gerados sejam confiáveis e
+                        alinhados com os princípios da Administração Pública.</p>
+                    <p><span class="certo">✅ Certo:</span> Utilizar IA para melhorar a clareza do texto, sem alterar o
+                        significado jurídico da decisão.</p>
+                    <p><span class="errado">❌ Errado:</span> Modificar a redação de um parecer com IA para favorecer
+                        indevidamente uma parte interessada.</p>
+                    <p><span class="dica">📌 Dica:</span> O servidor deve sempre assumir a responsabilidade pelo
+                        conteúdo gerado com o auxílio da IA.</p>
+                </li>
+                <li>
+                    <h3>9. Revisão Humana </h3>
+                    <p>Nunca confie cegamente nos resultados da IA</p>
+                    <p>O usuário deve revisar todas as respostas geradas por IA antes de utilizá-las, conforme a
+                        Portaria (Art. 2º, inciso II).</p>
+                    <p><span class="certo">✅ Certo:</span> Revisar detalhadamente o documento, corrigindo erros e
+                        garantindo que esteja alinhado à jurisprudência aplicável.</p>
+                    <p><span class="errado">❌ Errado:</span> Copiar um documento gerado por IA e enviá-lo diretamente para
+                        publicação.</p>
+                    <p><span class="dica">📌 Dica:</span> IA pode cometer erros e deve ser usada como ferramenta de
+                        apoio, nunca como fonte final de decisão.</p>
+                </li>
+                <li>
+                    <h3>10. Uso Ético e Responsável da IA </h3>
+                    <p>A IA deve ser usada para aprimorar os serviços da PGE-SC, sem comprometer sua integridade.</p>
+                    <p><span class="certo">✅ Certo:</span> Utilizar IA para melhorar a produtividade com
+                        responsabilidade.</p>
+                    <p><span class="errado">❌ Errado:</span> Tentar burlar restrições para utilizar IA sem controle.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="info-section" id="conclusaoSection">
+            <h2>Conclusão</h2>
+            <p>O uso da IA na PGE-SC deve seguir diretrizes claras para garantir segurança, transparência e conformidade
+                com as normas da instituição. Seguindo estas boas práticas, é possível aproveitar os benefícios da IA
+                sem comprometer a integridade dos dados e a qualidade dos serviços prestados.</p>
+            <p><strong>Dicas:</strong></p>
+            <ul>
+                <li>✔ Proteja dados sensíveis</li>
+                <li>✔ Utilize apenas plataformas seguras</li>
+                <li>✔ Valide sempre as respostas geradas</li>
+                <li>✔ Mantenha-se atualizado sobre as regulamentações</li>
+            </ul>
+        </section>
+        <section class="info-section" id="pesquisaSection">
+            <h2>Pesquisa de Satisfação</h2>
+            <div class="survey-container">
+                <p>Você gostaria de contribuir com uma avaliação ou sugestões?</p>
+                <div class="rating-container">
+                    <div class="rating-numbers">
+                        <!-- Rating buttons 0-10 -->
+                        <button class="rating-btn" data-value="0">0</button>
+                        <button class="rating-btn" data-value="1">1</button>
+                        <button class="rating-btn" data-value="2">2</button>
+                        <button class="rating-btn" data-value="3">3</button>
+                        <button class="rating-btn" data-value="4">4</button>
+                        <button class="rating-btn" data-value="5">5</button>
+                        <button class="rating-btn" data-value="6">6</button>
+                        <button class="rating-btn" data-value="7">7</button>
+                        <button class="rating-btn" data-value="8">8</button>
+                        <button class="rating-btn" data-value="9">9</button>
+                        <button class="rating-btn" data-value="10">10</button>
+                    </div>
+                    
+                    <div class="feedback-container">
+                        <label for="feedback">Deixe seu feedback (opcional):</label>
+                        <textarea id="feedback" rows="4" placeholder="Digite seus comentários aqui..."></textarea>
+                        <input type="text" id="nome" placeholder="Nome" />
+                        <input type="email" id="email" placeholder="E-mail" />
+                    </div>
+                    <button id="submit-survey" class="submit-btn">Enviar Avaliação</button>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+        <button id="survey-trigger">Feedback</button>
+    
+
+    </main>
+    <footer>
+        <p>© 2025 - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>
